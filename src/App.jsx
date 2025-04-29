@@ -1,18 +1,14 @@
-import { useState } from 'react';
-import BookCover from './pages/BookCover';
-import Scene1_BookPage from './pages/Scene1_BookPage';
+
+import Scene1_Hero from './pages/Scene1_Hero';
+
 
 function App() {
-    const [bookIsOpen, setBookIsOpen] = useState(false);
+   
 
     return (
         <>
-            {!bookIsOpen ? (
-                <BookCover onOpen={() => setBookIsOpen(true)} />
-            ) : (
-                <Scene1_BookPage />
-            )}
-        </>
+        <Scene1_Hero />
+         </>
     );
 }
 
